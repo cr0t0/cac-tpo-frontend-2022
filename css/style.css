@@ -52,7 +52,8 @@ div.nav-container {
 
 /* hero banner */
 .hero-banner {
-  width: 100vw;
+  /* el width esta rompiendo ya que al estar dentro del main y asignarle un valor del 100% del vw hace que el main se exceda del vw*/
+  /* width: 100vw; */
   height: 50vh;
   /* cambiar a imagen luego */
   background: rgb(151, 148, 192);

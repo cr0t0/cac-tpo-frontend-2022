@@ -8,11 +8,7 @@ main {
     justify-content: center;
 }
 
-/* h2 {
-    text-align: center;
-}
-
-h1 {
+/* h1 {
     background-image: url("/assets/servicios/header.jpg");
     background-size: 100%;
     width: 100vw;
@@ -47,12 +43,12 @@ h1 {
     /* border: 1px solid red; */
     padding-right: 10vw;
     padding-left: 10vw;
-    padding-bottom: 5vw;
+    padding-bottom: 3%;
     justify-content: center;
 }
 
 
-.child1, .child1r, .child2, .topchild, .topchild2, .imagesort, .imagesortr {
+.child1, .child1r, .topchild, .topchild2, .imagesort, .imagesortr {
     display: flex;
     flex-direction: column;
     /* border: 1px solid blue; */
@@ -76,7 +72,13 @@ h1 {
 
 .topchild, .topchild2 {
     width: 60vw;
+    height: inherit;
     /* border: 1px solid yellow */
+}
+
+.topchild2 {
+    flex-direction: row;
+    position: relative
 }
 
 #reverse {
@@ -85,10 +87,66 @@ h1 {
     animation: mover_backwards_reverse 1s ease;
 }
 
-.main, .extra1, .extra2 {
-    width: 15vw;
-    height: 15vh;
+.main {
+    width: 20vw;
+    height: auto;
     align-self: center;
+}
+
+.extra1h {
+    position: absolute;
+    bottom: calc(50%);
+    left: calc(25% + 6px);
+    width: 24vw;
+    height: auto;
+}
+
+.extra2h {
+    position: absolute;
+    bottom: 0px;
+    left: calc(15% + 6px);
+    width: 17vw;
+    height: auto;
+}
+
+.extra1g {
+    position: absolute;
+    right: 6px;
+    bottom: calc(30%);
+    width: 15vw;
+    height: auto;
+}
+
+.extra2g {
+    position: absolute;
+    bottom: 0px;
+    right: calc(30% + 6px);
+    width: 18vw;
+    height: auto;
+}
+
+.extra1s {
+    position: absolute;
+    bottom: 0px;
+    left: 6px;
+    width: 30vw;
+    height: auto;
+}
+
+.extra1e {
+    position: absolute;
+    right: calc(40%);
+    bottom: 40px;
+    width: 16vw;
+    height: auto;
+}
+
+.extra2e {
+    position: absolute;
+    right: 6px;
+    bottom: 0px;
+    width: 17vw;
+    height: auto;
 }
 
 @keyframes mover_backwards {
@@ -125,12 +183,7 @@ h1 {
 
     .main {
         width: 30vw;
-        height: 30vh;
-    }
-
-    .extra2, .extra1 {
-        width: 0%;
-        height: 0%;
+        height: auto;
     }
 }
 
@@ -168,11 +221,6 @@ h1 {
     .main {
         align-self: center;
         width: 30vw;
-        height: 20vh;
-    }
-    
-    .extra1, .extra2 {
-        width: 0%;
-        height: 0%;
+        height: auto;
     }
 }
