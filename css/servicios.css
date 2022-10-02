@@ -70,6 +70,10 @@ h1 {
     padding: 2em;
 }
 
+.parent {
+    animation: mover_backwards 1s ease;
+}
+
 .topchild, .topchild2 {
     width: 60vw;
     /* border: 1px solid yellow */
@@ -78,6 +82,7 @@ h1 {
 #reverse {
     flex-direction: row-reverse;
     text-align: right;
+    animation: mover_backwards_reverse 1s ease;
 }
 
 .main, .extra1, .extra2 {
@@ -86,6 +91,15 @@ h1 {
     align-self: center;
 }
 
+@keyframes mover_backwards {
+    0%{transform: translateX(50vw) scale(0);}
+    100%{transform: translateX(0px) scale(1);}
+}
+
+@keyframes mover_backwards_reverse {
+    0%{transform: translateX(-50vw) scale(0);}
+    100%{transform: translateX(0px) scale(1);}
+}
 
 @media (max-width: 768px) {
     .parent {
