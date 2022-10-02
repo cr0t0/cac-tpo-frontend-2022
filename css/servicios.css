@@ -22,6 +22,23 @@ h1 {
 
 .semifooter {
     background-color: #f3f3f3;
+    padding: 1em;
+}
+
+.upperlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+.list {
+    margin:1em;
+}
+
+.buttoncenter {
+    display: flex;
+    justify-content: center;
 }
 
 .parent {
@@ -33,6 +50,7 @@ h1 {
     padding-bottom: 5vw;
     justify-content: center;
 }
+
 
 .child1, .child1r, .child2, .topchild, .topchild2, .imagesort, .imagesortr {
     display: flex;
