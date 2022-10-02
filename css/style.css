@@ -1,12 +1,13 @@
+/* import */
+@import "./servicios.css";
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
-/* import */
-@import "./servicios.css";
 
 
 /* 
@@ -22,16 +23,13 @@ font-family: 'Sarabun', sans-serif;
 font-family: 'Scheherazade New', serif;
 */
 
-
-
-
 /* navbar */
 div.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: cornsilk;
-  padding: 1em 5em;
+  /* padding: 1em 5em; */
 }
 .logo {
   display: block;
@@ -97,7 +95,12 @@ div.nav-container {
   font-weight: 400;
   text-align: center;
   margin: auto;
-  width: fit-content;
-  padding: 2.5em 10em;
-  border-bottom: 1px solid black;
+  padding: 2.5em;
+  /* border-bottom: 1px solid black; */
+}
+
+.sector-line {
+  margin: auto;
+  margin-top: 3em;
+  width: 70vw;
 }

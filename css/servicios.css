@@ -1,0 +1,146 @@
+h3 {
+    color: #B86300;
+};
+
+main {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+}
+
+/* h2 {
+    text-align: center;
+}
+
+h1 {
+    background-image: url("/assets/servicios/header.jpg");
+    background-size: 100%;
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+} */
+
+.semifooter {
+    background-color: #f3f3f3;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+}
+
+.child1, .child1r, .child2, .topchild, .topchild2, .imagesort, .imagesortr {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+}
+
+.child1 {
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.35);
+    padding: 2em;
+}
+
+
+.child1r {
+    box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.35);
+    padding: 2em;
+}
+
+.topchild, .topchild2 {
+    width: 60vw;
+    /* border: 1px solid yellow */
+}
+
+#reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.main, .extra1, .extra2 {
+    width: 15vw;
+    height: 15vh;
+    align-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .parent {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+
+    .topchild {
+        width: 90vw;
+    }
+    
+    .imagesort {
+        flex-direction: row;
+    }
+
+    .imagesortr {
+        flex-direction: row-reverse;
+    }
+    
+    .topchild2 {
+        display: none;
+    }
+
+    .main {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .extra2, .extra1 {
+        width: 0%;
+        height: 0%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    p {
+        order: 2;
+    }
+
+    img {
+        order: 1;
+    }
+
+    .parent {
+        padding-right: 0vw;
+        padding-left: 0vw;
+    }
+
+    .topchild {
+        width: 100vw;
+    }
+
+    .topchild2 {
+        display: none;
+    }
+
+    .child1, .child1r {        
+        box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.35);
+        text-align: center;
+    }
+    
+    .imagesort, .imagesortr {
+        flex-direction: column;
+    }
+
+    .main {
+        align-self: center;
+        width: 30vw;
+        height: 20vh;
+    }
+    
+    .extra1, .extra2 {
+        width: 0%;
+        height: 0%;
+    }
+}
