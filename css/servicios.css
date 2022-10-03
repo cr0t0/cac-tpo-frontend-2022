@@ -37,7 +37,7 @@ main {
     justify-content: center;
 }
 
-.parent {
+.parent, .parentr {
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */
@@ -45,8 +45,15 @@ main {
     padding-left: 10vw;
     padding-bottom: 3%;
     justify-content: center;
+    animation: mover_backwards 1s ease;
 }
 
+
+.parentr {
+    flex-direction: row-reverse;
+    text-align: right;
+    animation: mover_backwards_reverse 1s ease;
+}
 
 .child1, .child1r, .topchild, .topchild2, .imagesort, .imagesortr {
     display: flex;
@@ -66,25 +73,18 @@ main {
     padding: 2em;
 }
 
-.parent {
-    animation: mover_backwards 1s ease;
+.topchild, .topchild2 {
+    width: 40vw;
+    /* border: 1px solid yellow */
 }
 
-.topchild, .topchild2 {
-    width: 60vw;
-    height: inherit;
-    /* border: 1px solid yellow */
+.topchild {
+    padding: 1em;
 }
 
 .topchild2 {
     flex-direction: row;
-    position: relative
-}
-
-#reverse {
-    flex-direction: row-reverse;
-    text-align: right;
-    animation: mover_backwards_reverse 1s ease;
+    position: relative;
 }
 
 .main {
@@ -93,60 +93,87 @@ main {
     align-self: center;
 }
 
+.containedimage {
+    object-fit: contain;
+    max-width: calc(100%);
+    max-height: calc(100%);
+}
+
 .extra1h {
+    display: flex;
+    justify-content: top;
+    margin:5px;
     position: absolute;
-    bottom: calc(50%);
-    left: calc(25% + 6px);
-    width: 24vw;
-    height: auto;
+    top: calc(57%);
+    bottom: 0;
+    left: calc(25%);
+    right: calc(25%);
 }
 
 .extra2h {
+    display: flex;
+    justify-content: left;
     position: absolute;
-    bottom: 0px;
-    left: calc(15% + 6px);
-    width: 17vw;
-    height: auto;
+    margin:5px;
+    top: 0;
+    bottom: calc(40%);
+    left: 0;
+    right: 0;
 }
 
 .extra1g {
+    display: flex;
+    justify-content: top;
+    margin:5px;
     position: absolute;
-    right: 6px;
-    bottom: calc(30%);
-    width: 15vw;
-    height: auto;
+    top: calc(50%);
+    bottom: 0;
+    left: calc(25%);
+    right: calc(25%);
 }
 
 .extra2g {
+    display: flex;
+    justify-content: left;
     position: absolute;
-    bottom: 0px;
-    right: calc(30% + 6px);
-    width: 18vw;
-    height: auto;
+    margin:5px;
+    top: 0;
+    bottom: calc(30%);
+    left: calc(50%);
+    right: 0;
 }
 
 .extra1s {
+    display: flex;
+    justify-content: left;
     position: absolute;
-    bottom: 0px;
-    left: 6px;
-    width: 30vw;
-    height: auto;
+    margin:5px;
+    top: calc(5%);
+    bottom: calc(5%);
+    left: calc(5%);
+    right: calc(5%);
 }
 
 .extra1e {
+    display: flex;
+    justify-content: right;
+    margin:5px;
     position: absolute;
-    right: calc(40%);
-    bottom: 40px;
-    width: 16vw;
-    height: auto;
+    top: 0;
+    bottom: calc(15%);
+    left: 0;
+    right: calc(55%);
 }
 
 .extra2e {
+    display: flex;
+    justify-content: left;
     position: absolute;
-    right: 6px;
-    bottom: 0px;
-    width: 17vw;
-    height: auto;
+    margin:5px;
+    top: calc(55%);
+    bottom: 0;
+    left: calc(40%);
+    right: 0;
 }
 
 @keyframes mover_backwards {
@@ -160,13 +187,14 @@ main {
 }
 
 @media (max-width: 768px) {
-    .parent {
+    .parent, .parentr {
         padding-right: 5vw;
         padding-left: 5vw;
     }
 
     .topchild {
         width: 90vw;
+        height: auto;
     }
     
     .imagesort {
@@ -196,13 +224,14 @@ main {
         order: 1;
     }
 
-    .parent {
+    .parent, .parentr {
         padding-right: 0vw;
         padding-left: 0vw;
     }
 
     .topchild {
         width: 100vw;
+        height: auto;
     }
 
     .topchild2 {
