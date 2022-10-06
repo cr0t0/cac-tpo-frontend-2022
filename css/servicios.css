@@ -8,14 +8,6 @@ main {
     justify-content: center;
 }
 
-/* h1 {
-    background-image: url("/assets/servicios/header.jpg");
-    background-size: 100%;
-    width: 100vw;
-    height: 30vh;
-    text-align: center;
-} */
-
 .semifooter {
     background-color: #f3f3f3;
     padding: 1em;
@@ -32,15 +24,20 @@ main {
     margin:1em;
 }
 
+
 .buttoncenter {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
-.parent, .parentr {
+.innertext {
+    margin: 1em;
+}
+
+.parent {
     display: flex;
     flex-direction: row;
-    /* border: 1px solid red; */
     padding-right: 10vw;
     padding-left: 10vw;
     padding-bottom: 3%;
@@ -49,16 +46,15 @@ main {
 }
 
 
-.parentr {
+.rev {
     flex-direction: row-reverse;
     text-align: right;
     animation: mover_backwards_reverse 1s ease;
 }
 
-.child1, .child1r, .topchild, .topchild2, .imagesort, .imagesortr {
+.child1, .topchild, .imagesort {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
     justify-content: space-between;
 }
 
@@ -68,27 +64,21 @@ main {
 }
 
 
-.child1r {
+.shadowr {
     box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.35);
-    padding: 2em;
-}
-
-.topchild, .topchild2 {
-    width: 40vw;
-    /* border: 1px solid yellow */
 }
 
 .topchild {
-    padding: 1em;
+    width: 40vw;
 }
 
-.topchild2 {
+.c2 {
     flex-direction: row;
     position: relative;
 }
 
 .main {
-    width: 20vw;
+    width: 25vw;
     height: auto;
     align-self: center;
 }
@@ -101,46 +91,42 @@ main {
 
 .extra1h {
     display: flex;
-    justify-content: top;
-    margin:5px;
+    justify-content: center;
     position: absolute;
     top: calc(57%);
-    bottom: 0;
-    left: calc(25%);
-    right: calc(25%);
+    bottom: 1%;
+    left: calc(40%);
+    right: 0;
 }
 
 .extra2h {
     display: flex;
-    justify-content: left;
+    flex-direction:column-reverse;
     position: absolute;
-    margin:5px;
-    top: 0;
-    bottom: calc(40%);
-    left: 0;
+    top: -133%;
+    bottom: calc(90%);
+    left: -66%;
     right: 0;
 }
 
 .extra1g {
     display: flex;
-    justify-content: top;
+    justify-content: center;
     margin:5px;
     position: absolute;
-    top: calc(50%);
+    top: calc(40%);
     bottom: 0;
-    left: calc(25%);
-    right: calc(25%);
+    left: calc(20%);
+    right: calc(20%);
 }
 
 .extra2g {
     display: flex;
-    justify-content: left;
     position: absolute;
-    margin:5px;
-    top: 0;
-    bottom: calc(30%);
+    top: -70%;
+    bottom: 40%;
     left: calc(50%);
-    right: 0;
+    right: -30%;
 }
 
 .extra1s {
@@ -154,9 +140,11 @@ main {
     right: calc(5%);
 }
 
+
 .extra1e {
     display: flex;
     justify-content: right;
+    vertical-align: bottom;
     margin:5px;
     position: absolute;
     top: 0;
@@ -169,11 +157,10 @@ main {
     display: flex;
     justify-content: left;
     position: absolute;
-    margin:5px;
     top: calc(55%);
-    bottom: 0;
-    left: calc(40%);
-    right: 0;
+    bottom: -19%;
+    left: calc(90%);
+    right: -110%;
 }
 
 @keyframes mover_backwards {
@@ -187,7 +174,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .parent, .parentr {
+    .parent {
         padding-right: 5vw;
         padding-left: 5vw;
     }
@@ -201,11 +188,11 @@ main {
         flex-direction: row;
     }
 
-    .imagesortr {
+    .irev {
         flex-direction: row-reverse;
     }
     
-    .topchild2 {
+    .c2 {
         display: none;
     }
 
@@ -224,7 +211,15 @@ main {
         order: 1;
     }
 
-    .parent, .parentr {
+    .upperlist{
+        flex-direction: column;
+    }
+
+    .list {
+        margin: 0;
+    }
+
+    .parent {
         padding-right: 0vw;
         padding-left: 0vw;
     }
@@ -232,18 +227,20 @@ main {
     .topchild {
         width: 100vw;
         height: auto;
+        padding: 1em;
     }
 
-    .topchild2 {
+    .c2 {
         display: none;
     }
 
-    .child1, .child1r {        
+    .child1 {        
         box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.35);
+        padding: 0;
         text-align: center;
     }
     
-    .imagesort, .imagesortr {
+    .imagesort {
         flex-direction: column;
     }
 

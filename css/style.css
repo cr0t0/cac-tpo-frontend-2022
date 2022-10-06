@@ -92,11 +92,12 @@ div.nav-container {
 }
 .section-title {
   font-family: 'Cinzel', Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   font-weight: 400;
   text-align: center;
   margin: auto;
-  padding: 2.5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   /* border-bottom: 1px solid black; */
 }
 
