@@ -102,13 +102,19 @@ a:visited {
 
   .footer-left {
     flex: 1 0 50%;
-    border-right: 1px solid gray;
+    /* border-right: 1px solid gray; */
   }
 
   .footer-right {
     flex: 1 0 50%;
     text-align: right;
     padding: 0.5% 8%;
+  }
+
+  .vertical-line {
+    border-left: 1px solid gray;
+    height: 230px;
+    margin-top: 0.9%;
   }
 }
 
