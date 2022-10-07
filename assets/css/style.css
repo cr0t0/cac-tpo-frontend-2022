@@ -116,6 +116,10 @@ a:visited {
     height: 230px;
     margin-top: 0.9%;
   }
+
+  .footer-left h4 {
+    padding-left: 5%;
+  }
 }
 
 @media screen and (max-width: 480px) {
