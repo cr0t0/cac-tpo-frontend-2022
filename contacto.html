@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Sarabun:wght@300;400&family=Scheherazade+New&display=swap" rel="stylesheet">
+
+    <title>Contacto</title>
 </head>
 <body>
-    
+
+    <!-- HEADER y NAV AQUI -->
+
+    <main>
+        <!-- EMPIEZA HERO BANNER AQUI -->
+        <div class="hero-banner">
+            <div>
+                <div class="hero-title">
+                    <h2>Contacto</h2>
+                </div>
+                <div>
+                    <a class="hero button black-link" href="">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <!-- TERMINA BANNER AQUI -->
+
+    <!-- EMPIEZA SECCION PRINCIPAL DE PAGINA -->
+    <div class="section-title">
+        <h1>Envíenos sus consultas</h1>
+        <hr>
+    </div>
+
+    <!-- EMPIEZA FORM -->
+    <div class="wrapper-container">
+        <form action="/link" method="post">
+            <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="John" required>
+            <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Doe" required>
+            <label for="telefono">Teléfono</label>
+                <input type="number" name="telefono" id="telefono">
+            <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+            <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto">
+
+            <p>Mensaje</p>
+                <textarea name="" id="" cols="30" rows="10" required></textarea>
+
+                <input type="submit" id="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+        </form>
+    </div>
+        
+    </main>
 </body>
 </html>

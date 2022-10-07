@@ -41,7 +41,7 @@ font-family: 'Scheherazade New', serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: #f3f3f3;
   padding: 1em;
   box-shadow: 0px 15px 40px 0px rgba(0,0,0,1);
 }
@@ -149,6 +149,7 @@ font-family: 'Scheherazade New', serif;
   font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
   font-size: 3em;
   font-weight: 100;
+  text-transform: uppercase;
 }
 .section-title {
   font-family: 'Cinzel', Georgia, Times, 'Times New Roman', serif;
@@ -156,6 +157,7 @@ font-family: 'Scheherazade New', serif;
   font-weight: 400;
   text-align: center;
   margin: auto;
+  padding-bottom: 7em;
   /* width: fit-content; */
   /* border-bottom: 1px solid black; */
 }
@@ -178,7 +180,7 @@ h3 {
 
 
 /* TABLET */
-@media only screen and (min-width:800px){
+@media only screen and (min-width:768px){
 
   .nav-container {
     padding: 1em 4em;
@@ -214,8 +216,8 @@ h3 {
 
 }
 
-
-@media only screen and (min-width: 801px){
+/* DESKTOP */
+@media only screen and (min-width: 768px){
   .hamburger-menu , .close-button {
     display: none;
   }
