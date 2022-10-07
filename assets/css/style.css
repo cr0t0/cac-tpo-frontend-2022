@@ -68,12 +68,6 @@ h4 {
   font-weight: normal;
 }
 
-.subir {
-  text-decoration: underline;
-  color: #ffcc4d;
-  padding: 25% 0 0 35%;
-}
-
 subir > a:link,
 a:visited {
   color: #ffcc4d;
@@ -101,14 +95,27 @@ a:visited {
   }
 
   .footer-left {
+    margin-top: 0.3%;
     flex: 1 0 50%;
     /* border-right: 1px solid gray; */
+  }
+
+  .footer-left-ul {
+    margin-top: 0.9%;
   }
 
   .footer-right {
     flex: 1 0 50%;
     text-align: right;
     padding: 0.5% 8%;
+  }
+
+  .footer-right h4 {
+    margin-bottom: 2%;
+  }
+
+  .social-icons {
+    margin-right: -46px;
   }
 
   .vertical-line {
@@ -119,6 +126,12 @@ a:visited {
 
   .footer-left h4 {
     padding-left: 5%;
+  }
+
+  .subir {
+    text-decoration: underline;
+    color: #ffcc4d;
+    padding: 13.5% 0 0 35%;
   }
 }
 
