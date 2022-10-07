@@ -1,103 +1,132 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  --golden: #ffcc4d;
+  --brown: #221515;
   text-decoration: none;
 }
 
-/* import */
-@import "./servicios.css";
+html {
+  scroll-behavior: smooth;
+}
 
-
-/* 
-FUENTES:
-Cincel: nombre de hotel en nav y subtitulo de la pagina (se encuentra debajo del banner o hero)
-Scheherazade New: titulo de la pagina (se encuentra en el banner o hero), titulos de secciones y footer
-Sarabun: parrafos y botones
-*/
-
-/* 
-font-family: 'Cinzel', serif;
-font-family: 'Sarabun', sans-serif;
-font-family: 'Scheherazade New', serif;
-*/
-
-
-
-
-/* navbar */
-div.nav-container {
+body {
+  background-color: #222;
+  color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: cornsilk;
-  padding: 1em 5em;
+  flex-flow: column nowrap;
+  min-height: 100vh;
 }
-.logo {
-  display: block;
+
+header {
+  background: blue;
+  position: sticky;
+  top: 0;
 }
-.nav-links-container ul {
-  list-style: none;
-  text-transform: uppercase;
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: red;
+  position: sticky;
+  margin-top: auto;
+  bottom: 0;
+  background: var(--brown);
+  color: white;
   display: flex;
+  flex-direction: column;
 }
 
-.nav-links-container ul li{
-  padding-left: 2em;
-}
-.nav-links-container ul li a{
-  color: #B86300;
-  text-decoration: none;
-  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.footer-left {
+  /* background: blue; */
 }
 
-
-/* hero banner */
-.hero-banner {
-  width: 100vw;
-  height: 50vh;
-  /* cambiar a imagen luego */
-  background: rgb(151, 148, 192);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.footer-right {
+  /* background: red;*/
 }
 
-.brand-container {
-  font-family: 'Cinzel', Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5em;
-}
-.black-link{
-  color: #000;
+footer div {
+  padding: 10px;
 }
 
-.button {
-  display: inline-block;
-  padding: .7em 2.9em;
-  background: #FFCC4D;
-  border-radius: .3em;
-  text-transform: uppercase;
-  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ul {
+  list-style-type: none;
 }
 
-.hero{
-  bottom: 2em;
-  margin: 2em;
+.footer-left-ul a {
+  all: unset;
 }
 
-.hero-title h2{
-  font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
-  font-size: 3em;
-  font-weight: 100;
+.footer-mail {
+  color: var(--golden);
 }
-.section-title {
-  font-family: 'Cinzel', Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  text-align: center;
-  margin: auto;
-  width: fit-content;
-  padding: 2.5em 10em;
-  border-bottom: 1px solid black;
+
+h4 {
+  font-weight: normal;
 }
+
+.subir {
+  text-decoration: underline;
+  color: #ffcc4d;
+  padding: 25% 0 0 35%;
+}
+
+subir > a:link,
+a:visited {
+  color: #ffcc4d;
+}
+.svg-email {
+  translate: -3px 5px;
+}
+
+.email {
+  color: #ffcc4d;
+}
+
+.svg-phone {
+  translate: -3px 5px;
+}
+.social-icons img {
+  margin: 0 6px;
+  position: relative;
+  right: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    flex-flow: row nowrap;
+  }
+
+  .footer-left {
+    flex: 1 0 50%;
+    border-right: 1px solid gray;
+  }
+
+  .footer-right {
+    flex: 1 0 50%;
+    text-align: right;
+    padding: 0.5% 8%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right {
+    border-top: 1px solid gray;
+    background: blue;
+    text-align: center;
+  }
+
+  .footer-right h4 {
+    display: none;
+  }
+
+  .social-icons * {
+    margin: 0 10%;
+  }
+}
+
