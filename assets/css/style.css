@@ -31,7 +31,7 @@ main {
 
 footer {
   background: red;
-  position: sticky;
+  /* position: sticky; */
   margin-top: auto;
   bottom: 0;
   background: var(--brown);
