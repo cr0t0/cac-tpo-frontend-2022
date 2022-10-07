@@ -137,6 +137,9 @@ a:visited {
 
 @media screen and (max-width: 480px) {
   .footer-left {
+    text-align: justify;
+  }
+  .footer-left h4 {
     text-align: center;
   }
   .footer-right {
@@ -145,11 +148,18 @@ a:visited {
     text-align: center;
   }
 
+  .footer-left-address {
+  }
+
   .footer-right h4 {
     display: none;
   }
 
   .social-icons * {
     /* margin: 0 2%; */
+  }
+
+  .subir {
+    display: none;
   }
 }
