@@ -1,0 +1,11 @@
+.grey-container {
+    background: #f3f3f3;
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-banner {
+
+    background-image: url(/assets/img/contacto/pexels-mikhail-nilov-7820316.jpg);
+}
