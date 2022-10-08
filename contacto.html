@@ -16,6 +16,42 @@
 <body>
 
     <!-- HEADER y NAV AQUI -->
+    <header>
+        <!-- check unused classes -->
+            <div class="nav-container">
+                <div class="logo-brandname-container">
+                    <div class="logo-container">
+                        <!-- colocar logo cuando este disponible -->
+                        <a href=""><img class="logo" src="assets/icons/diamond-outline-svgrepo-com.svg" alt=""></a>
+                    </div>
+                    <div class="brand-container">
+                        <a class="black-link" href=""><h3>Hotel Diamond Resort</h3></a>
+                    </div>
+                </div>
+
+                <nav id="top">
+                    <div class="nav-links-container">
+                        <img class="close-button" src="assets/icons/close-or-erase-cross-circular-button-for-interface-svgrepo-com.svg" alt="">
+                        <ul>
+                            <li>
+                                <a href="servicios.html" class="nav-link">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="galeria.html" class="nav-link">Galería</a>
+                            </li>
+                            <li>
+                                <a href="quienes-somos.html" class="nav-link">Quiénes somos</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="hamburger-menu" src="assets/icons/hamburger-menu-svgrepo-com.svg" alt="">
+                </nav>
+
+            </div>
+    </header>
 
     <main>
         <!-- EMPIEZA HERO BANNER AQUI -->
@@ -39,32 +75,34 @@
 
     <!-- EMPIEZA FORM -->
     <div class="wrapper-container">
-        <form action="/link" method="post">
-            <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="John" required>
-            <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Doe" required>
-            <label for="telefono">Teléfono</label>
-                <input type="number" name="telefono" id="telefono">
-            <label for="email">Correo electrónico</label>
-                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-            <label for="asunto">Asunto</label>
-                <input type="text" name="asunto" id="asunto">
+        <div class="form-container">
+            <form action="/link" method="post">
+                <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="John" required>
+                <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Doe" required>
+                <label for="telefono">Teléfono</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="24957498">
+                <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Quiero hacer una reserva">
 
-            <p>Mensaje</p>
-                <textarea name="" id="" cols="30" rows="10" required></textarea>
+                <p class="form-p" >Mensaje</p>
+                    <textarea name="" id="" cols="30" rows="10" required></textarea>
 
-                <input type="submit" id="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-        </form>
-
+                    <input class="button" type="submit" id="submit" value="Enviar">
+                    <input class="button" type="reset" value="Borrar">
+            </form>
+        </div>
+        
         <div class="grey-container">
-            <div>
-            <h3>Nuestra ubicación</h3>
-            <p>Nuestro hotel se encuentra en el centro de la ciudad, muy cercano a importantes destinos como shoppings, cines, museos de arte, plazas y parques.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.223517961962!2d-58.381618091396454!3d-34.60344344646504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1665192940879!5m2!1ses-419!2sar" width="600" height="450" style="border:0; box-shadow: 10px 20px 29px -3px rgba(0,0,0,0.1);
-            " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-info-container">
+                <h3>Nuestra ubicación</h3>
+                <p>Nuestro hotel se encuentra en el centro de la ciudad, muy cercano a importantes destinos como shoppings, cines, museos de arte, plazas y parques.</p>
             </div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.223517961962!2d-58.381618091396454!3d-34.60344344646504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1665192940879!5m2!1ses-419!2sar" style="border:0; box-shadow: 10px 20px 29px -3px rgba(0,0,0,0.1);
+                " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
         
