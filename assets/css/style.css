@@ -151,6 +151,10 @@ font-family: 'Scheherazade New', serif;
   font-weight: 100;
   text-transform: uppercase;
 }
+.white {
+  color: #fff;
+}
+
 .section-title {
   font-family: 'Cinzel', Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
@@ -158,8 +162,8 @@ font-family: 'Scheherazade New', serif;
   text-align: center;
   margin: auto;
   padding-bottom: 7em;
-
 }
+
 .section-title hr {
   width: 70vw;
   margin: auto;
