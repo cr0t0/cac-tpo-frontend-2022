@@ -9,17 +9,6 @@
 @import "./servicios.css";
 
 
-/* BODY */
-body {
-  background: aquamarine;
-}
-
-body p {
-  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.8rem
-  }
-
-
 
 /* 
 FUENTES:
@@ -34,7 +23,20 @@ font-family: 'Sarabun', sans-serif;
 font-family: 'Scheherazade New', serif;
 */
 
+/* BODY */
+/* body {
+  background: aquamarine;
+} */
 
+body p {
+  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.8rem
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
 
 /* NAVBAR */
 .nav-container {
@@ -43,7 +45,9 @@ font-family: 'Scheherazade New', serif;
   align-items: center;
   background: #f3f3f3;
   padding: 1em;
-  box-shadow: 0px 15px 40px 0px rgba(0,0,0,1);
+  box-shadow: 0px -1px 56px -16px rgba(0,0,0,0.61);
+-webkit-box-shadow: 0px -1px 56px -16px rgba(0,0,0,0.61);
+-moz-box-shadow: 0px -1px 56px -16px rgba(0,0,0,0.61);
 }
 
 .logo-brandname-container {
