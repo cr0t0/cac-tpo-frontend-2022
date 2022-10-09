@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
   --golden: #ffcc4d;
   --brown: #221515;
-  text-decoration: none;
+  --white: #ffffff;
 }
 
 html {
@@ -12,7 +15,7 @@ html {
 
 body {
   background-color: #222;
-  color: white;
+  color: var(--white);
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
@@ -28,44 +31,44 @@ header {
 main {
   flex: 1;
 }
-
-footer {
-  background: red;
-  /* position: sticky; */
-  margin-top: auto;
-  bottom: 0;
+/* Empieza footer, lo de arriba volarlo si unimos nav-index-footer. Ver si dejamos colores como custom properties(variables) */
+.footer-container {
   background: var(--brown);
-  color: white;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+  /* margin: 1 rem; */
 }
 
 .footer-left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 2%;
+
   /* background: blue; */
 }
 
+.separator {
+  border-bottom: 2px solid gray;
+  width: 80%;
+  margin: 3% 0;
+}
+
 .footer-right {
-  /* background: red;*/
+  /* background: red; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 2%;
 }
 
-/* footer div {
-  padding: 10px;
-} */
-
-ul {
-  list-style-type: none;
+.social-icons {
+  padding-top: 3%;
 }
 
-.footer-left-ul a {
-  all: unset;
-}
-
-.footer-mail {
-  color: var(--golden);
-}
-
-h4 {
-  font-weight: normal;
+.subir {
+  display: none;
 }
 
 subir > a:link,
@@ -83,83 +86,65 @@ a:visited {
 .svg-phone {
   translate: -3px 5px;
 }
-.social-icons img {
-  margin: 0 6px;
-  position: relative;
-  right: 35px;
+
+.footer-left-ul a {
+  all: unset;
 }
 
-@media screen and (min-width: 1024px) {
-  footer {
+h4 {
+  font-weight: normal;
+}
+
+/* MEDIA-QUERY */
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+}
+/* DESKTOP - big landscape tablets, laptops, and desktops */
+@media only screen and (min-width: 1024px) {
+  .footer-container {
     flex-flow: row nowrap;
-  }
-
-  .footer-left {
-    margin-top: 0.3%;
-    flex: 1 0 50%;
-    /* border-right: 1px solid gray; */
-  }
-
-  .footer-left-ul {
-    margin-top: 0.9%;
+    /* justify-content: space-around; */
+    /* align-items: center; */
   }
 
   .footer-right {
+    /* background: red; */
     flex: 1 0 50%;
-    text-align: right;
-    padding: 0.5% 8%;
+    align-items: center;
+    align-self: start;
+    margin-top: 2%;
+    padding-left: 8%;
+  }
+  .footer-left {
+    flex: 1 0 50%;
+    align-items: center;
+    align-self: start;
+    margin-top: 2%;
   }
 
-  .footer-right h4 {
-    margin-bottom: 2%;
+  .footer-left-title h4 {
+    margin-left: -70%;
+  }
+
+  .subir {
+    display: block;
+    text-decoration: underline;
+    color: var(--golden);
+    padding: 3.5% 0 0 2%;
+    position: absolute;
+  }
+  .separator {
+    /* border-bottom: 0; */
+    border-left: 2px solid gray;
+    height: 8rem;
   }
 
   .social-icons {
-    margin-right: -46px;
+    padding: 1.5% 0 0 5%;
   }
 
-  .vertical-line {
-    border-left: 2px solid gray;
-    height: 155px;
-    margin: 1.2% 0 2.5% 0;
-  }
-
-  .footer-left h4 {
-    padding-left: 5%;
-  }
-
-  .subir {
-    text-decoration: underline;
-    color: #ffcc4d;
-    padding: 9.5% 0 0 45%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .footer-left {
-    text-align: justify;
-  }
-  .footer-left h4 {
-    text-align: center;
-  }
-  .footer-right {
-    border-top: 1px solid gray;
-    background: blue;
-    text-align: center;
-  }
-
-  .footer-left-address {
-  }
-
-  .footer-right h4 {
-    display: none;
-  }
-
-  .social-icons * {
-    /* margin: 0 2%; */
-  }
-
-  .subir {
-    display: none;
+  .social-icons img {
+    margin: 0 3px;
   }
 }
