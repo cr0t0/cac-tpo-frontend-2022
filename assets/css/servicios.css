@@ -1,0 +1,262 @@
+@import "./style.css";
+
+body main h3 {
+    color: #B86300;
+};
+
+main {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+}
+
+.semifooter {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 1em;
+}
+
+.upperlist{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.list {
+    margin: 0;
+}
+
+.child1, .topchild, .imagesort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3%;
+    animation: mover_backwards 2s ease;
+}
+
+.topchild {
+    width: 100vw;
+    height: auto;
+    padding: 1em;
+}
+
+.c2 {
+    display: none;
+}
+
+.child1 {
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.35);
+    padding: 0;
+}
+
+.child1 > h3 {
+    font-size: 1.5em;
+    font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
+}
+
+.main {
+    align-self: center;
+    width: 30vw;
+    height: auto;
+}
+
+.buttoncenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.innertext {
+    font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1em;
+}
+
+.hero-banner {
+    background-image: url(/assets/img/servicios/pexels-cottonbro-6466283.jpg);
+}
+
+/* @media screen and (max-width: 414px) {
+    
+}
+ */
+@media only screen and (min-width:768px){
+    p {
+        order: 1;
+    }
+    
+    img {
+        order: 2;
+    }
+
+    .semifooter {
+        text-align: left;
+    }
+    
+    .upperlist {
+        flex-direction: row;
+        margin: 1em;
+    }
+    
+    .list {
+        margin:1em;
+    }
+
+    .parent {
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-bottom: 3%;
+        text-align: left;
+        animation: mover_backwards 2s ease;
+    }
+
+    .topchild {
+        width: 90vw;
+        height: auto;
+    }
+
+    .child1 {
+        box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.35);
+        padding: 2em;
+    }
+    
+    .rev {
+        flex-direction: row-reverse;
+        text-align: right;
+        animation: mover_backwards_reverse 2s ease;
+    }
+    
+    .shadowr {
+        box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.35);
+    }
+    
+    .imagesort {
+        flex-direction: row;
+    }
+
+    .irev {
+        flex-direction: row-reverse;
+    }
+
+    .main {
+        width: 30vw;
+        height: auto;
+        align-self: center;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */
+    .parent {
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+    
+    .topchild {
+        width: 40vw;
+        position: relative;
+        z-index: -1;
+    }
+
+    .imagesort {
+        flex-direction: column;
+    }
+    
+    .main {
+        width: 25vw;
+        height: auto;
+    }
+
+    .c2 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .containedimage {
+        object-fit: contain;
+        max-width: calc(100%);
+        max-height: calc(100%);
+    }
+    
+    .extra1h {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: calc(57%);
+        bottom: 1%;
+        left: calc(40%);
+        right: 0;
+    }
+    
+    .extra2h {
+        display: flex;
+        flex-direction:column-reverse;
+        position: absolute;
+        top: -133%;
+        bottom: calc(90%);
+        left: -66%;
+        right: 0;
+    }
+    
+    .extra1g {
+        display: flex;
+        justify-content: center;
+        margin:5px;
+        position: absolute;
+        top: calc(40%);
+        bottom: 0;
+        left: calc(20%);
+        right: calc(20%);
+    }
+    
+    .extra2g {
+        display: flex;
+        position: absolute;
+        top: -70%;
+        bottom: 40%;
+        left: calc(50%);
+        right: -30%;
+    }
+    
+    .extra1s {
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        margin:5px;
+        top: calc(5%);
+        bottom: calc(5%);
+        left: calc(5%);
+        right: calc(5%);
+    }
+    
+    
+    .extra1e {
+        display: flex;
+        justify-content: right;
+        vertical-align: bottom;
+        margin:5px;
+        position: absolute;
+        top: 0;
+        bottom: calc(15%);
+        left: 0;
+        right: calc(55%);
+    }
+    
+    .extra2e {
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        top: calc(55%);
+        bottom: -19%;
+        left: calc(90%);
+        right: -110%;
+    }
+
+}
