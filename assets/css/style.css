@@ -71,10 +71,10 @@ main {
   display: none;
 }
 
-subir > a:link,
+/* subir > a:link,
 a:visited {
   color: #ffcc4d;
-}
+} */
 .svg-email {
   translate: -3px 5px;
 }
@@ -104,6 +104,7 @@ h4 {
 @media only screen and (min-width: 1024px) {
   .footer-container {
     flex-flow: row nowrap;
+    overflow: hidden;
     /* justify-content: space-around; */
     /* align-items: center; */
   }
