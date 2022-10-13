@@ -80,10 +80,10 @@
 
                 <div class="grupo-nombre">
                     <label for="nombre">Nombre y Apellido*</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="John Doe" >
-                        <div class="nombre-error">
-                            <p>Por favor, ingresa tu nombre completo.</p>
-                        </div>
+                        <input type="text" name="nombre" id="nombre" placeholder="John Doe" onkeyup="validateName()">
+                        <span id="nombre-error">
+                        
+                        </span>
                 </div>
 
                 <!-- <label for="apellido">Apellido</label>
