@@ -76,11 +76,14 @@
     <!-- EMPIEZA FORM -->
     <div class="wrapper-container">
         <div class="form-container">
-            <form action="/link" method="post">
+            <form id="form" action="/link" method="post">
 
                 <div class="grupo-nombre">
-                    <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="John Doe" required>
+                    <label for="nombre">Nombre y Apellido*</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="John Doe" >
+                        <div class="nombre-error">
+                            <p>Por favor, ingresa tu nombre completo.</p>
+                        </div>
                 </div>
 
                 <!-- <label for="apellido">Apellido</label>
@@ -92,8 +95,11 @@
                 </div>
 
                 <div class="grupo-email">
-                    <label for="email">Correo electrónico</label>
-                       <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                    <label for="email">Correo electrónico*</label>
+                       <input type="email" name="email" id="email" placeholder="example@mail.com">
+                       <div class="email-error">
+                        <p>Por favor, ingresa tu correo electrónico.</p>
+                    </div>
                 </div>
 
                 <div class="grupo-asunto">
@@ -102,8 +108,11 @@
                 </div>
 
                 <div class="grupo-mensaje">
-                <label for="textarea">Mensaje</label>
-                    <textarea name="mensaja" id="textarea" cols="30" rows="10" required></textarea>
+                <label for="textarea">Mensaje*</label>
+                    <textarea name="mensaja" id="textarea" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+                    <div class="mensaje-error">
+                        <p>Por favor, deja tu comentario.</p>
+                    </div>
                 </div>
                 
                 <div class="grupo-checkbox">
@@ -112,8 +121,12 @@
                         ¡Deseo recibir novedades!
                     </label>
                 </div>
+                
                 <div class="grupo-btn">
-                    <input class="hero button" type="submit" id="submit" value="Enviar">
+                    <input class="button" type="submit" id="submit" value="Enviar">
+                </div>
+                <div class="submit-error">
+                    <p>Por favor, completa los campos requeridos.</p>
                 </div>
             </form>
         </div>
