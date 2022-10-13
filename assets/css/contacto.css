@@ -30,7 +30,6 @@ form {
     justify-content: center;
     /* background: darkseagreen; */
     padding-bottom: 7em;
-    max-width: ;
 }
 label {
     display: block;
@@ -63,7 +62,9 @@ input[type=text]:focus , [type=number]:focus , [type=email]:focus , textarea:foc
     justify-content: center;
 }
 input[type=submit] {
+    padding: .7em 5em;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -113,9 +114,15 @@ input[type=submit] {
  */
 
 
+.nombre-error , .email-error , .mensaje-error , .submit-error p {
+    font-weight: bold;
+    /* font-size: .9rem; */
+    color: crimson;
+}
 
-
-
+.submit-error {
+    text-align: center;
+}
 
 /* MEDIA-QUERY */
 
@@ -139,7 +146,7 @@ input[type=submit] {
         grid-template-columns: 1fr 1fr;
     }
 
-    .grupo-mensaje , .grupo-checkbox , .grupo-btn {
+    .grupo-mensaje , .grupo-checkbox , .grupo-btn , .submit-error {
         grid-column: span 2;
     }
 
