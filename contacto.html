@@ -77,22 +77,44 @@
     <div class="wrapper-container">
         <div class="form-container">
             <form action="/link" method="post">
-                <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="John" required>
-                <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Doe" required>
-                <label for="telefono">Teléfono</label>
-                    <input type="number" name="telefono" id="telefono" placeholder="24957498">
-                <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-                <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto" id="asunto" placeholder="Quiero hacer una reserva">
 
-                <p class="form-p" >Mensaje</p>
-                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                <div class="grupo-nombre">
+                    <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="John Doe" required>
+                </div>
 
-                    <input class="button" type="submit" id="submit" value="Enviar">
-                    <input class="button" type="reset" value="Borrar">
+                <!-- <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Doe" required> -->
+
+                <div class="grupo-telefono">
+                    <label for="telefono">Teléfono</label>
+                        <input type="number" name="telefono" id="telefono" placeholder="24957498">
+                </div>
+
+                <div class="grupo-email">
+                    <label for="email">Correo electrónico</label>
+                       <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="grupo-asunto">
+                    <label for="asunto">Asunto</label>
+                      <input type="text" name="asunto" id="asunto" placeholder="Quiero hacer una reserva">
+                </div>
+
+                <div class="grupo-mensaje">
+                <label for="textarea">Mensaje</label>
+                    <textarea name="mensaja" id="textarea" cols="30" rows="10" required></textarea>
+                </div>
+                
+                <div class="grupo-checkbox">
+                    <label>
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                        ¡Deseo recibir novedades!
+                    </label>
+                </div>
+                <div class="grupo-btn">
+                    <input class="hero button" type="submit" id="submit" value="Enviar">
+                </div>
             </form>
         </div>
         
@@ -107,5 +129,6 @@
     </div>
         
     </main>
+    <script src="assets/js/hamburger-menu.js"></script>
 </body>
 </html>
