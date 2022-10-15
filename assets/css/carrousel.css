@@ -1,0 +1,64 @@
+/* :root {
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+} */
+
+.ncarrousel {
+    width: 70%;
+    max-width: 120em;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    overflow: hidden;
+    z-index: -1;
+}
+  
+.ncarrousel .ngrande {
+    width: 500%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+  
+.ncarrousel .img {
+    width: calc( 100% / 5 - 4em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    border: 1px solid #FFCC4D;
+}
+
+.npuntos {
+    width: 100%;
+    padding: 0.4em;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.npunto {
+    width: 2em;
+    height: 2em;
+    margin: 0 1em 0;
+    color: #393939;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: #ececec;
+    box-shadow: 0.6em 0.6em 1.2em #c9c9c9, -0.6em -0.6em 1.2em #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.npunto.activo {
+    background-color: #FFCC4D;
+}
