@@ -61,7 +61,7 @@ function validateEmail(){
 
         return false;
     }
-    if (!email.match (/^[A-Za-z0-9_.-]+[@][A-Za-z0-9-]+[A-Za-z0-9-.]+[a-z]{2,4}$/)) {
+    if (!email.match (/^[A-Za-z0-9_.-]+[@][A-Za-z0-9-]+[.]+[a-z]{2,4}$/)) {
         emailError.innerHTML = 'Por favor, ingresa una dirección de correo válida.';
         return false;
     }
