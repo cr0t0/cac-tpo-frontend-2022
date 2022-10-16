@@ -67,11 +67,11 @@ main {
     height: auto;
 }
 
-.buttoncenter {
+/* .buttoncenter {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
+} */
 
 .innertext {
     font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

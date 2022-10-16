@@ -1,0 +1,140 @@
+@import "./style.css";
+
+.hero-banner {
+    background-image: url("../img/contacto/pexels-mikhail-nilov-7820316.jpg");
+}
+/* empieza prueba de container max-width */
+/* body {
+    max-width: 1440px;
+    margin: 0px auto;
+    background: rgb(240, 237, 233);
+}
+main {
+    background: #fff;
+} */
+
+/* termina prueba de container max-width */
+
+
+/* FORM */
+form {
+    font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    /* background-color: aqua; */
+    width: 90%;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    /* background: darkseagreen; */
+    padding-bottom: 7em;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+input[type=text] , [type=number] , [type=email] , textarea {
+    display: block;
+    border: 0px;
+    border-bottom: 3px solid rgb(255, 190, 130);
+    margin-bottom: 1em;
+    padding: .6em;
+    background: #f3f3f3;
+    width: 100%;
+        font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .9rem;
+}
+input[type=checkbox] {
+    margin-right: .7em;
+}
+input[type=text]:focus , [type=number]:focus , [type=email]:focus , textarea:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(71, 101, 233);}
+
+
+.grupo-btn {
+    display: flex;
+    justify-content: center;
+}
+input[type=submit] {
+    padding: .7em 5em;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* MAP */
+.grey-container {
+    background: #f3f3f3;
+    padding: 5em 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+}
+
+
+.grey-container p {
+    padding-top: 2em;
+}
+.map {
+    width: 100%;
+    height: 40vh;
+}
+
+
+#nombre-error , #telefono-error , #email-error , #mensaje-error , #submit-error {
+    font-weight: bold;
+    /* font-size: .9rem; */
+    color: crimson;
+}
+
+.submit-error {
+    text-align: center;
+}
+
+/* MEDIA-QUERY */
+
+
+/* TABLET */
+@media only screen and (min-width:768px){
+    form{
+        max-width: 50vw;
+    }
+}
+
+
+
+
+
+
+/* DESKTOP */
+@media only screen and (min-width:1024px) {
+    form{
+        max-width: 50vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grupo-mensaje , .grupo-checkbox , .grupo-btn , #submit-error {
+        grid-column: span 2;
+    }
+
+ .grey-container {
+    justify-content: center;
+    padding: 5em 15vw;
+ }
+
+ .map-info-container {
+    max-width: 23vw;
+ }
+
+
+}

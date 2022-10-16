@@ -58,6 +58,7 @@
     border-radius: 1em;
     background-color: #ececec;
     box-shadow: 0.6em 0.6em 1.2em #c9c9c9, -0.6em -0.6em 1.2em #ffffff, inset 0 0 0 transparent, inset 0 0 0 transparent;
+    cursor: pointer;
 }
 
 .npunto.activo {

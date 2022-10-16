@@ -69,11 +69,11 @@
     text-shadow: 0px 0px 5px black;
 }
 
-.buttoncenter {
+/* .buttoncenter {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
+} */
 
 .hero-banner {
     background-image: url(/assets/img/nosotros/pexels-alexandros-chatzidimos-3652784.jpg);
