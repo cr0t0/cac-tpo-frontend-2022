@@ -89,32 +89,7 @@ input[type=submit] {
 }
 
 
-
-
-/* VALIDACION */
-/* .formulario-correcto input[type=text] , [type=number] , [type=email] , textarea {
-    border: 0px;
-    border-bottom: 3px solid rgb(185, 18, 12);
-}
-    .formulario-error {
-
-    } */
-
-
-    /* --------------------- */
-    /* input:invalid {
-        border-bottom: 3px solid lightcoral;
-    
-        }
-    
-        input:valid {
-        border-bottom: 3px solid lightseagreen;
-    
-        }
- */
-
-
-#nombre-error , #email-error , #mensaje-error , #submit-error {
+#nombre-error , #telefono-error , #email-error , #mensaje-error , #submit-error {
     font-weight: bold;
     /* font-size: .9rem; */
     color: crimson;
@@ -146,7 +121,7 @@ input[type=submit] {
         grid-template-columns: 1fr 1fr;
     }
 
-    .grupo-mensaje , .grupo-checkbox , .grupo-btn , .submit-error {
+    .grupo-mensaje , .grupo-checkbox , .grupo-btn , #submit-error {
         grid-column: span 2;
     }
 
