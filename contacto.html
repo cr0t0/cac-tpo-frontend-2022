@@ -76,7 +76,7 @@
     <!-- EMPIEZA FORM -->
     <div class="wrapper-container">
         <div class="form-container">
-            <form id="form" action="/link" method="post">
+            <form id="form" action="" method="post">
 
                 <div class="grupo-nombre">
                     <label for="nombre">Nombre y Apellido*</label>
@@ -86,20 +86,19 @@
                         </span>
                 </div>
 
-                <!-- <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Doe" required> -->
-
                 <div class="grupo-telefono">
-                    <label for="telefono">Teléfono</label>
-                        <input type="number" name="telefono" id="telefono" placeholder="24957498">
+                    <label for="telefono">Teléfono*</label>
+                        <input type="number" name="telefono" id="telefono" placeholder="24957498" onkeyup="validatePhone()">
+                        <span id="telefono-error">
+
+                        </span>
                 </div>
 
                 <div class="grupo-email">
                     <label for="email">Correo electrónico*</label>
-                       <input type="email" name="email" id="email" placeholder="example@mail.com">
-                       <div class="email-error">
-                        <p>Por favor, ingresa tu correo electrónico.</p>
-                    </div>
+                       <input type="email" name="email" id="email" placeholder="example@mail.com" onkeyup="validateEmail()">
+                       <span id="email-error">
+                       </span>
                 </div>
 
                 <div class="grupo-asunto">
@@ -109,10 +108,9 @@
 
                 <div class="grupo-mensaje">
                 <label for="textarea">Mensaje*</label>
-                    <textarea name="mensaja" id="textarea" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
-                    <div class="mensaje-error">
-                        <p>Por favor, deja tu comentario.</p>
-                    </div>
+                    <textarea name="mensaja" id="textarea" cols="30" rows="10" placeholder="Deja tu mensaje" onkeyup="validateMessage()"></textarea>
+                    <span id="mensaje-error">
+                    </span>
                 </div>
                 
                 <div class="grupo-checkbox">
@@ -123,11 +121,10 @@
                 </div>
                 
                 <div class="grupo-btn">
-                    <input class="button" type="submit" id="submit" value="Enviar">
+                    <input class="button" type="submit" id="submit" value="Enviar" onclick="validateSubmit()">
                 </div>
-                <div class="submit-error">
-                    <p>Por favor, completa los campos requeridos.</p>
-                </div>
+                <span id="submit-error">
+                </span>
             </form>
         </div>
         
@@ -142,6 +139,75 @@
     </div>
         
     </main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-left-title">
+              <h4>Hotel Diamond Resort</h4>
+            </div>
+            <div class="footer-left-contact">
+              <ul class="footer-left-ul">
+                <li>
+                  <a href="#" class="footer-left-address"
+                    >Dirección:<img src="/assets/icons/location.svg" />37 y 49 N°
+                    9058 Buenos Aires, Argentina</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Teléfono:
+                    <img
+                      class="svg-phone"
+                      src="/assets/icons/phone.svg"
+                    />540113904968</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Email:
+                    <img class="svg-email" src="/assets/icons/mail.svg" /><span
+                      class="email"
+                      >reservas@diamondresort.com</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="footer-right">
+            <div class="footer-right-title">
+              <h4>Nuestras redes sociales:</h4>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  src="/assets/icons/facebook.svg"
+                  alt="facebook icon"
+                  srcset=""
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  src="/assets/icons/instagram.svg"
+                  alt="instagram icon"
+                  srcset=""
+              /></a>
+              <a href="https://twitter.com" target="_blank">
+                <img src="/assets/icons/twitter.svg" alt="twitter icon" srcset=""
+              /></a>
+              <a href="https://github.com/" target="_blank">
+                <img src="/assets/icons/github.svg" alt="github icon" srcset=""
+              /></a>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="/assets/icons/share.svg" alt="share icon" srcset=""
+              /></a>
+            </div>
+            <div class="footer-right-footer">
+              <a class="subir" href="#top">Ir arriba</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script src="assets/js/hamburger-menu.js"></script>
     <script src="assets/js/validation.js"></script>
 </body>
