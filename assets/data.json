@@ -1,0 +1,44 @@
+{
+    "opiniones": [
+        {
+            "nombre": "Enrique Pina",
+            "calificacion": "5",
+            "opinion": "Gran servicios. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Víctor Alves",
+            "calificacion": "5",
+            "opinion": "Gran servicios. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Nazaret Florez",
+            "calificacion": "5",
+            "opinion": "Gran servicio. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Marcos Maza",
+            "calificacion": "5",
+            "opinion": "Gran servicio. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Ester Costa",
+            "calificacion": "5",
+            "opinion": "Gran servicio. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Angelina Veiga",
+            "calificacion": "5",
+            "opinion": "Gran servicio. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Juan Luis Castaño",
+            "calificacion": "5",
+            "opinion": "Gran servicio. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        },
+        {
+            "nombre": "Araceli Solana",
+            "calificacion": "5",
+            "opinion": "Gran servicio. Tuve que realizar un cambio de ultima hora en la reservacion y me lo solucionaron muy rapidamente"
+        }
+    ]
+}

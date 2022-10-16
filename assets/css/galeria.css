@@ -10,17 +10,8 @@
     flex-direction: column;
 }
 
-.bblue {
-    border: 1px solid blue;
-}
-
-.bgreen {
-    border: 1px solid green;
-}
-
 .ndivgeneral {
     display: flex;
-    width: 70vw;
     justify-content: center;
     padding: 1em;
 }
@@ -33,6 +24,7 @@
 }
 
 .nchild p {
+    text-align: center;
     font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -83,9 +75,58 @@
     border: 1px solid #FFCC4D;
 }
 
+.opiniones {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 40vh;
+    overflow: scroll;
+    justify-content: space-around;
+}
+
+.opinioninfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    border: 1px solid #FFCC4D;
+    padding: 1em;
+    margin: 2px;
+}
+
+.nombre {
+    font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
+}
+
+.opinion {
+    font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
 @media only screen and (min-width:768px){
+    .starcontainer {
+        display: flex;
+        justify-content: center;
+    }
+    .hide {
+        display: flex;
+    }
 }
 
 /* DESKTOP */
 @media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */
+    .ndivgeneral {
+        width: 70vw;
+    }
+    .opiniones {
+        max-height: 60vh;
+        overflow: auto;
+    }
+    .opinioninfo {
+        width: 24%;
+        height: 48%;
+    }
 }
