@@ -77,6 +77,14 @@
     justify-content: space-around;
 }
 
+.bblue {
+    border: 1px solid blue;
+}
+
+.bgreen {
+    border: 1px solid green;
+}
+
 .opinioninfo {
     display: flex;
     flex-direction: column;
@@ -86,6 +94,11 @@
     border: 1px solid #FFCC4D;
     padding: 1em;
     margin: 2px;
+    background-color: white;
+}
+
+.bgrey {
+    background-color: #f3f3f3;
 }
 
 .nombre {
@@ -96,7 +109,20 @@
     font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.gtittle {
+    font-size: 2em;
+    font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #B86300;
+}
 
+.cimage {
+    object-fit: contain;
+    max-width: calc(100%);
+    max-height: calc(100%);
+    border: 1px solid #FFCC4D;
+    border-radius: 1em;
+}
 
 .starcontainer {
     display: flex;
@@ -135,6 +161,12 @@
     .ndivgeneral {
         width: 70vw;
     }
+
+    .ncdiv {
+        width: 60vw;
+        align-self: center;
+    }
+
     .opiniones {
         max-height: 70vh;
         overflow: auto;

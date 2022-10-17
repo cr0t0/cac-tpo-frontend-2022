@@ -9,7 +9,7 @@
 
 .ncarrousel {
     /* width: 90%; */
-    width: 100%;
+    width: 90%;
     max-width: 120em;
     transition: all 0.4s ease;
     border-radius: 1em;
@@ -31,12 +31,17 @@
     transform: translateX(0%);
 }
   
-.ncarrousel .img {
+.ncarrousel .cdiv {
     width: calc( 100% / 5 - 4em);
     min-height: 10vh;
     transition: all 0.4s ease;
-    border-radius: 1em;
-    border: 1px solid #FFCC4D;
+}
+
+.ncarrousel .ctittle {
+    font-size: 2em;
+    font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #B86300;
 }
 
 .npuntos {

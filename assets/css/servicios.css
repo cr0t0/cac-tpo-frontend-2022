@@ -10,22 +10,6 @@ main {
     justify-content: center;
 }
 
-.semifooter {
-    text-align: center;
-    background-color: #f3f3f3;
-    padding: 1em;
-}
-
-.upperlist{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.list {
-    margin: 0;
-}
-
 .child1, .topchild, .imagesort {
     display: flex;
     flex-direction: column;
@@ -56,7 +40,7 @@ main {
     padding: 0;
 }
 
-.child1 > h3 {
+.stittle {
     font-size: 1.5em;
     font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
 }
@@ -65,6 +49,27 @@ main {
     align-self: center;
     width: 30vw;
     height: auto;
+}
+
+.semifooter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 1em;
+}
+
+.upperlist{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.sfparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
 }
 
 /* .buttoncenter {
@@ -101,7 +106,12 @@ main {
     
     .upperlist {
         flex-direction: row;
-        margin: 1em;
+        justify-content: space-between;
+        margin: none;
+    }
+
+    .sfparent { 
+        width: 90vw;
     }
     
     .list {
@@ -119,6 +129,7 @@ main {
     .topchild {
         width: 90vw;
         height: auto;
+        padding: 0;
     }
 
     .child1 {
@@ -154,8 +165,12 @@ main {
 /* DESKTOP */
 @media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */
     .parent {
-        padding-right: 10vw;
-        padding-left: 10vw;
+        padding-right: 15vw;
+        padding-left: 15vw;
+    }
+
+    .sfparent {
+        width: 70vw;
     }
     
     .topchild {
@@ -201,7 +216,7 @@ main {
         position: absolute;
         top: -133%;
         bottom: calc(90%);
-        left: -66%;
+        left: -64%;
         right: 0;
     }
     
