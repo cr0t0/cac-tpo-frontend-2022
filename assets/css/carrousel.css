@@ -9,7 +9,7 @@
 
 .ncarrousel {
     /* width: 90%; */
-    width: 90%;
+    width: 90vw;
     max-width: 120em;
     transition: all 0.4s ease;
     border-radius: 1em;
@@ -38,7 +38,6 @@
 }
 
 .ncarrousel .ctittle {
-    font-size: 2em;
     font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
     text-align: center;
     color: #B86300;
