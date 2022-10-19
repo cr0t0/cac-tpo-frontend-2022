@@ -157,7 +157,7 @@ body p {
 
 .hero{
   bottom: 2em;
-  margin: 2em;
+  margin: 2em 0;
 }
 
 .hero-title h2{
@@ -176,7 +176,7 @@ body p {
   font-weight: 400;
   text-align: center;
   margin: auto;
-  padding-bottom: 7em;
+  /* padding-bottom: 7em; */
 }
 
 .section-title hr {
@@ -194,7 +194,7 @@ h3 {
 }
 
 .buttoncenter {
-  margin: 5em 0;
+  margin: 7em 0;
 }
 
 html {

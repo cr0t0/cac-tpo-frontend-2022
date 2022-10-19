@@ -3,12 +3,14 @@
 .divgeneral {
     display: flex;
     justify-content: center;
+    margin-bottom: 3em;
 }
 
 .divgeneral2 {
     display: flex;
     max-width: 70vw;
     animation: mover_backwards 2s ease;
+    padding: 7em 0;
 }
 
 .rev {
@@ -64,6 +66,7 @@
     background-repeat: no-repeat;
     justify-content: center;
     text-align: center;
+    margin-top: 4em;
 }
 
 .lowerbanner > h3 {

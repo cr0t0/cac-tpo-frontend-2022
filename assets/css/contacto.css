@@ -17,6 +17,9 @@ main {
 
 
 /* FORM */
+.wrapper-container {
+    padding: 7em 0;
+}
 form {
     font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
