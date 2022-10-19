@@ -216,7 +216,7 @@ body {
   overflow: hidden;
   flex-flow: column wrap;
   align-items: center;
-  background-color: #222;
+  /* background-color: #222; */
   color: var(--white);
   font-family: 'Scheherazade New', serif;
   /* margin: 1 rem; */
