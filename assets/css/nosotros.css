@@ -68,9 +68,11 @@
 
 .lowerbanner > h3 {
     font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: normal;
     color: white;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 15px black;
+    text-transform: uppercase;
 }
 
 /* .buttoncenter {
