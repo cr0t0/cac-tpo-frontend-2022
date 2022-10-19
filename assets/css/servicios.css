@@ -56,7 +56,7 @@ main {
     justify-content: center;
     text-align: center;
     background-color: #f3f3f3;
-    padding: 1em;
+    padding: 5em 1em;
 }
 
 .upperlist{
@@ -72,11 +72,6 @@ main {
     width: 100vw;
 }
 
-/* .buttoncenter {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-} */
 
 .innertext {
     font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

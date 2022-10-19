@@ -188,7 +188,9 @@ h3 {
   font-size: 1.2rem;
 }
 
-
+.buttoncenter {
+  margin: 5em 0;
+}
 
 html {
   scroll-behavior: smooth;
