@@ -5,6 +5,11 @@
   text-decoration: none;
 }
 
+:root {
+  --golden: #ffcc4d;
+  --brown: #221515;
+  --white: #ffffff;
+}
 /* 
 FUENTES:
 Cinzel: nombre de hotel en nav y subtitulo de la pagina (se encuentra debajo del banner o hero)
@@ -31,6 +36,7 @@ body p {
   header {
     position: sticky;
     top: 0;
+    z-index: 999;
   }
 
 /* NAVBAR */
@@ -181,11 +187,7 @@ h3 {
   font-size: 1.2rem;
 }
 
-* {
-  --golden: #ffcc4d;
-  --brown: #221515;
-  --white: #ffffff;
-}
+
 
 html {
   scroll-behavior: smooth;
