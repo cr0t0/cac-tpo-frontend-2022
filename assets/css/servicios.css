@@ -1,19 +1,13 @@
 @import "./style.css";
 
-body main h3 {
-    color: #B86300;
-};
-
-main {
-    background-color: #f3f3f3;
-    display: flex;
-    justify-content: center;
-}
-
 .child1, .topchild, .imagesort {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.imagesort {
+    gap: 1em;
 }
 
 .parent {
@@ -38,11 +32,13 @@ main {
 .child1 {
     box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.15);
     padding: 0;
+    gap: 1em;
 }
 
 .stittle {
     font-size: 1.5em;
     font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
+    color: #B86300;
 }
 
 .main {
@@ -109,6 +105,11 @@ main {
     .sfparent { 
         width: 90vw;
     }
+
+    .innertext {
+        margin: 0;
+        margin-bottom: 2em;
+    }
     
     .list {
         margin:1em;
@@ -130,7 +131,8 @@ main {
 
     .child1 {
         box-shadow: 2px 2px 30px 1px rgba(0, 0, 0, 0.15);
-        padding: 2em;
+        padding: 3em;
+        gap: 0;
     }
     
     .rev {
@@ -163,15 +165,22 @@ main {
 @media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */
     .parent {
         padding-right: 15vw;
+        justify-content: space-between;
+        padding-top: 5em;
+        padding-bottom: 5em;
         padding-left: 15vw;
     }
 
     .sfparent {
         width: 70vw;
     }
+
+    .semifooter {
+        margin-top: 3em;
+    }
     
     .topchild {
-        width: 40vw;
+        width: 33vw;
         position: relative;
         z-index: -1;
     }
@@ -181,7 +190,7 @@ main {
     }
     
     .main {
-        width: 25vw;
+        width: 100%;
         height: auto;
     }
 
