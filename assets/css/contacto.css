@@ -7,7 +7,6 @@
 /* body {
     max-width: 1440px;
     margin: 0px auto;
-    background: rgb(240, 237, 233);
 }
 main {
     background: #fff;
@@ -59,13 +58,22 @@ input[type=checkbox] {
 }
 input[type=text]:focus , [type=number]:focus , [type=email]:focus , textarea:focus {
     outline: none;
-    border-bottom: 3px solid rgb(71, 101, 233);}
+    border-bottom: 3px solid rgb(135, 157, 253);}
 
+.valid {
+    color: lightseagreen;
+    font-size: 1.2rem;
+}
 
 .grupo-btn {
     display: flex;
     justify-content: center;
 }
+
+#submit-error {
+    text-align: center;
+}
+
 input[type=submit] {
     padding: .7em 5em;
     border: none;
@@ -100,9 +108,7 @@ input[type=submit] {
     color: crimson;
 }
 
-.submit-error {
-    text-align: center;
-}
+
 
 /* MEDIA-QUERY */
 
