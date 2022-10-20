@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #f3f3f3;
+    background-color: var(--bg-medium);
     padding: 5em 1em;
 }
 

@@ -76,7 +76,7 @@ input[type=submit] {
 
 /* MAP */
 .grey-container {
-    background: #f3f3f3;
+    background: var(--bg-medium);
     padding: 5em 1em;
     display: flex;
     justify-content: center;

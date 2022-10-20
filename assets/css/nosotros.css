@@ -36,7 +36,7 @@
 }
 
 .grey {
-    background-color: #f3f3f3;
+    background-color: var(--bg-medium);
 }
 
 .mobile {
