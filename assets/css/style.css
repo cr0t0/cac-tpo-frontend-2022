@@ -155,6 +155,15 @@ body p {
   font-weight: bold;
 }
 
+.button:hover {
+  background-color: #ffab23;
+}
+
+.button:active {
+  position: relative;
+  top: 2px;
+}
+
 .hero{
   bottom: 2em;
   margin: 2em 0;
@@ -190,7 +199,10 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-family: 'Scheherazade New', serif;
+  color: #B86300;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 .buttoncenter {
