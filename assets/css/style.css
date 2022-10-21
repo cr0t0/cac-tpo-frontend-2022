@@ -241,6 +241,7 @@ html {
   /* background-color: #222; */
   color: var(--white);
   font-family: 'Sarabun', serif;
+  text-align: center;
   /* margin: 1 rem; */
 }
 
@@ -251,6 +252,9 @@ html {
   margin-top: 2%;
 
   /* background: blue; */
+}
+.footer-left li {
+  list-style: none;
 }
 
 .separator {
@@ -275,10 +279,6 @@ html {
   display: none;
 }
 
-/* subir > a:link,
-a:visited {
-  color: #ffcc4d;
-} */
 
 .svg-email {
   translate: -3px 5px;
@@ -311,10 +311,6 @@ h5 {
   align-items: flex-end;
 }
 
-ul,
-li {
-  list-style-type: none;
-}
 
 /* ANIMACIONES */
 
@@ -388,6 +384,7 @@ li {
     flex-flow: row nowrap;
     /* justify-content: space-around; */
     /* align-items: center; */
+    text-align: unset;
   }
 
   .footer-right {
