@@ -9,11 +9,10 @@
   --golden: #ffcc4d;
   --brown: #221515;
   --white: #ffffff;
-  --orange: #B86300;
+  --orange: #b86300;
   --bg-light: #f0f0f7;
   --bg-medium: rgb(250, 226, 216);
   --text-dark: rgb(19, 16, 16);
-
 }
 /* 
 FUENTES:
@@ -34,17 +33,18 @@ body {
 }
 
 body p {
-  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+    Arial, sans-serif;
   line-height: 1.8rem;
   color: #03071e;
   font-size: 1rem;
-  }
+}
 
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
 /* NAVBAR */
 .nav-container {
@@ -53,9 +53,9 @@ body p {
   align-items: center;
   background: #f3f3f3;
   padding: 1em;
-  box-shadow: 0px -1px 56px -16px rgba(0,0,0,0.61);
--webkit-box-shadow: 0px -1px 56px -16px rgba(0,0,0,0.61);
--moz-box-shadow: 0px -1px 56px -16px rgba(0,0,0,0.61);
+  box-shadow: 0px -1px 56px -16px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px -1px 56px -16px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px -1px 56px -16px rgba(0, 0, 0, 0.61);
 }
 
 .logo-brandname-container {
@@ -73,7 +73,7 @@ body p {
 }
 
 /* mobile right side navigation links */
-.nav-links-container{
+.nav-links-container {
   position: fixed;
   top: 0;
   right: 0;
@@ -84,7 +84,7 @@ body p {
   text-transform: uppercase;
   /* text-align: right; */
   transform: translateX(100%);
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .nav-links-container ul {
@@ -93,17 +93,17 @@ body p {
   margin-top: 6em;
 }
 
-.nav-links-container ul li a{
-  color: #B86300;
+.nav-links-container ul li a {
+  color: #b86300;
   padding: 1.5em;
   display: block;
   text-decoration: none;
-  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+    Arial, sans-serif;
 }
 
-.nav-links-container ul li a:hover{
+.nav-links-container ul li a:hover {
   background: #221515;
-
 }
 
 /* hamburger menu icon */
@@ -127,7 +127,6 @@ body p {
 .hero-banner {
   max-width: 100vw;
   height: 50vh;
-  /* background-image: url("../img/contacto/pexels-mikhail-nilov-7820316.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,19 +139,20 @@ body p {
 .brand-container {
   font-family: 'Cinzel', Georgia, Times, 'Times New Roman', serif;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
 }
-.black-link{
+.black-link {
   color: #000;
 }
 
 .button {
   display: inline-block;
-  padding: .7em 2.9em;
-  background: #FFCC4D;
-  border-radius: .3em;
+  padding: 0.7em 2.9em;
+  background: #ffcc4d;
+  border-radius: 0.3em;
   text-transform: uppercase;
-  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+    Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -166,12 +166,12 @@ body p {
   top: 2px;
 }
 
-.hero{
+.hero {
   bottom: 2em;
   margin: 2em 0;
 }
 
-.hero-title h2{
+.hero-title h2 {
   font-family: 'Scheherazade New', 'Times New Roman', Times, serif;
   font-size: 3em;
   font-weight: 100;
@@ -309,40 +309,44 @@ h4 {
 /* ANIMACIONES */
 
 @keyframes mover_backwards {
-  0%{transform: translateX(50vw) scale(1);}
-  100%{transform: translateX(0px) scale(1);}
+  0% {
+    transform: translateX(50vw) scale(1);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
 }
 
 @keyframes mover_backwards_reverse {
-  0%{transform: translateX(-50vw) scale(1);}
-  100%{transform: translateX(0px) scale(1);}
+  0% {
+    transform: translateX(-50vw) scale(1);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
 }
 
 /* MEDIA-QUERY */
 
 /* TABLET */
-@media only screen and (min-width:768px){
+@media only screen and (min-width: 768px) {
+  /* displays brandname on tablet and desktop */
+  .brand-container {
+    display: initial;
+  }
 
-  
-     /* displays brandname on tablet and desktop */
-     .brand-container {
-      display: initial;
-     }
-
-     .nav-container {
-      padding: 1em;
-    }
-  
+  .nav-container {
+    padding: 1em;
+  }
 }
 
 /* DESKTOP */
-@media only screen and (min-width:1024px) { 
-
+@media only screen and (min-width: 1024px) {
   .nav-container {
     padding: 1em 4em;
   }
- 
-  .nav-links-container{
+
+  .nav-links-container {
     position: unset;
     /* display: block; */
     width: auto;
@@ -352,23 +356,23 @@ h4 {
     transition: none;
   }
 
-
   .nav-links-container ul {
     display: flex;
     margin: 0;
   }
 
-  .nav-links-container ul li a:hover{
+  .nav-links-container ul li a:hover {
     background-color: unset;
     color: #221515;
     text-decoration: underline;
   }
-  .hamburger-menu , .close-button {
+  .hamburger-menu,
+  .close-button {
     display: none;
   }
-  .nav-links-container ul li a{
-    padding: .8em 1.5em;
-    font-size: .9rem;
+  .nav-links-container ul li a {
+    padding: 0.8em 1.5em;
+    font-size: 0.9rem;
   }
   .footer-container {
     flex-flow: row nowrap;
@@ -416,5 +420,4 @@ h4 {
   .social-icons img {
     margin: 0 3px;
   }
-
 }
