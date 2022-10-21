@@ -11,7 +11,7 @@
   --white: #ffffff;
   --orange: #B86300;
   --bg-light: #f0f0f7;
-  --bg-medium: rgb(255, 229, 226);
+  --bg-medium: rgb(250, 226, 216);
   --text-dark: rgb(19, 16, 16);
 
 }
@@ -35,7 +35,9 @@ body {
 
 body p {
   font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.8rem
+  line-height: 1.8rem;
+  color: #03071e;
+  font-size: 1rem;
   }
 
   header {
@@ -93,7 +95,7 @@ body p {
 
 .nav-links-container ul li a{
   color: #B86300;
-  padding: 1em 1.5em;
+  padding: 1.5em;
   display: block;
   text-decoration: none;
   font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -200,7 +202,7 @@ h1 {
 
 h3 {
   font-family: 'Scheherazade New', serif;
-  color: #B86300;
+  color: var(--orange);
   font-weight: 100;
   font-size: 2rem;
 }
@@ -334,7 +336,7 @@ h4 {
 }
 
 /* DESKTOP */
-@media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */ 
+@media only screen and (min-width:1024px) { 
 
   .nav-container {
     padding: 1em 4em;

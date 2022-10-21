@@ -88,6 +88,12 @@
     background-image: url(/assets/img/nosotros/pexels-alexandros-chatzidimos-3652784.jpg);
 }
 
+.center-div {
+    width: 85vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
 @media only screen and (min-width:768px){
     .mobile {
         display: none;
@@ -127,10 +133,16 @@
         justify-content: right;
         text-align: right;
     }
+
+    .center-div {
+        width: 70vw;
+        padding: 3em 0;
+    }
 }
 
+
 /* DESKTOP */
-@media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */
+@media only screen and (min-width:1024px) {
     .divgeneral2 {
         max-width: 70vw;
     }
@@ -144,4 +156,10 @@
     .lowerbanner {
         height: 40vh;
     }
+
+    .center-div {
+        width: 50vw;
+        padding: 7em 0;
+    }
+    
 }
