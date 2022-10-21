@@ -46,7 +46,6 @@
 .semifooter {
   display: flex;
   justify-content: center;
-  text-align: center;
   background-color: var(--bg-medium);
   padding: 5em 1em;
 }
@@ -61,7 +60,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
 }
 
 .innertext {
@@ -74,6 +72,11 @@
   background-image: url(/assets/img/servicios/pexels-cottonbro-6466283.jpg);
 }
 
+.upperlist li {
+  font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  line-height: 1.8rem;
+}
 @media only screen and (min-width: 768px) {
   p {
     order: 1;
@@ -93,11 +96,6 @@
     margin: none;
   }
 
-  .upperlist li {
-    font-family: 'Sarabun', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-    line-height: 1.8rem;
-  }
   .sfparent {
     width: 90vw;
   }
