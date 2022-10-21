@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -66,7 +67,6 @@ header {
 .logo {
   width: 3rem;
 }
-
 /* hides brandname on mobile */
 .brand-container {
   display: none;
@@ -240,7 +240,7 @@ html {
   align-items: center;
   /* background-color: #222; */
   color: var(--white);
-  font-family: 'Scheherazade New', serif;
+  font-family: 'Sarabun', serif;
   /* margin: 1 rem; */
 }
 
@@ -296,14 +296,23 @@ a:visited {
   all: unset;
 }
 
-h4 {
+h5 {
   font-weight: normal;
+}
+
+.social-icons img:hover {
+  filter: invert(0%) sepia(95%);
 }
 
 .buttoncenter {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+ul,
+li {
+  list-style-type: none;
 }
 
 /* ANIMACIONES */
@@ -395,7 +404,7 @@ h4 {
     margin-top: 2%;
   }
 
-  .footer-left-title h4 {
+  .footer-left-title h5 {
     margin-left: -70%;
   }
 
