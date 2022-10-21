@@ -1,18 +1,13 @@
 let url = "./assets/data.json"
 let opiniones1 = document.getElementById ('opiniones')
-
-fetch(url)
-.then (res => res.json())
-.then (opiniones => localStorage.setItem('opiniones', JSON.stringify(opiniones.opiniones)))
-
 let opiniones = JSON.parse( localStorage.getItem('opiniones'));
 
 function render (eRoot, data) {
     let div = document.createElement('div');
         div.setAttribute('class', 'opinioninfo');
-    let h3 = document.createElement('h3');
-        h3.innerHTML = data.nombre;
-        h3.setAttribute('class', 'nombre')
+    let h4 = document.createElement('h4');
+        h4.innerHTML = data.nombre;
+        h4.setAttribute('class', 'nombre')
     let star = +data.calificacion;
     let div2 = document.createElement('div');
     for (let index = 0; index < star; index++) {
@@ -28,10 +23,14 @@ function render (eRoot, data) {
     let par = document.createElement('p');
         par.innerHTML = data.opinion;
         par.setAttribute('class', 'opinion');
-    div.appendChild(h3);
+    div.appendChild(h4);
     div.appendChild(div2);
     div.appendChild(par);
     eRoot.appendChild(div);
 }
 
-opiniones.forEach(e => render (opiniones1, e));
+fetch(url)
+.then (res => res.json())
+.then (opiniones => localStorage.setItem('opiniones', JSON.stringify(opiniones.opiniones)))
+.then (() => (opiniones = JSON.parse (localStorage.getItem ('opiniones'))))
+.then (() => opiniones.forEach(e => render (opiniones1, e)))
