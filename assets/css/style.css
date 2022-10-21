@@ -255,6 +255,8 @@ html {
 }
 .footer-left li {
   list-style: none;
+  text-align: justify;
+  padding: 5px;
 }
 
 .separator {
@@ -296,6 +298,10 @@ html {
   all: unset;
 }
 
+.footer-right-title {
+  display: none;
+}
+
 h5 {
   font-weight: normal;
   font-size: 0.86rem;
@@ -303,6 +309,10 @@ h5 {
 
 .social-icons img:hover {
   filter: invert(0%) sepia(95%);
+}
+
+.social-icons img {
+  margin: 0 15px; /*3px*/
 }
 
 .buttoncenter {
@@ -344,6 +354,13 @@ h5 {
   .nav-container {
     padding: 1em;
   }
+
+  .footer-right-title {
+    display: block;
+  }
+  .social-icons img {
+    margin: 0 3px; /*3px*/
+  } 
 }
 
 /* DESKTOP */
@@ -424,7 +441,7 @@ h5 {
     padding: 1.5% 0 0 .2%;
   }
 
-  .social-icons img {
-    margin: 0 3px;
-  }
+  /* .social-icons img {
+    margin: 0 3px; /*3px*/
+  } */
 }
