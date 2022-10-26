@@ -27,5 +27,10 @@ Para finalizar, en cuanto a mis compañeros quiero decir que han sido muy colabo
 
 
 
-### Luis: Landind page, footer, facilitador de proyecto y deploy. Mis compañeros han sido muy activos en el desarrollo del proyecto.
+### Luis: 
+ * Landind page 
+ * footer 
+ * facilitador de proyecto y deploy
+  
+ Mis compañeros han sido muy activos en el desarrollo del proyecto.
 
