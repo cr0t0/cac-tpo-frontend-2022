@@ -32,5 +32,5 @@ Para finalizar, en cuanto a mis compañeros quiero decir que han sido muy colabo
  * Footer 
  * Facilitador de proyecto y Deploy.
   
- Mis compañeros han sido muy activos en el desarrollo del proyecto.
+ Agradezco la gran dedicación de mis compañeros en el desarrollo del proyecto.
 
