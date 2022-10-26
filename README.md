@@ -16,7 +16,7 @@
 
 * Me encargue de unir todas las piezas del proyecto para la primera pagina de Servicios para tener una referencia para el resto de Paginas.
 
-* Ayuda en varios aspectos menores de logica y organizacion.
+* Ayuda en algunos aspectos menores de logica y organizacion.
 
 Agradezco la gran flexibilidad de mis compañeros y su dedicacion al proyecto a pesar de los contratiempos generales y personales de cada uno.
 
