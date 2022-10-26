@@ -12,7 +12,7 @@
 
 * El Carrousel de la pagina de jaleria (junto con el javascrip necesario).
 
-* La implementacion de la "API" (a traves de un archivo local json) de la pagina de Galeria (junto con el javascript y archivos .json necesario).
+* La implementacion de la "API" (a traves de un archivo local json) de la pagina de Galeria (junto con el archivo .json base y el javascript necesario).
 
 * Me encargue de unir todas las piezas del proyecto para la primera pagina de Servicios para tener una referencia para el resto de Paginas.
 
