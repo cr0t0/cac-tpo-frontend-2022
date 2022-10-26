@@ -8,6 +8,16 @@
 
 ### Augusto:
 
+* Me encarge del body general (sin contar el footer, navbar y el banner de la pagina) de las paginas de "Servicios", "Galeria" & "Quienes Somos(nosotros.html)"; esto incluye: Adaptar todos los medios al mock de Laura para replicarlo de la mejor forma posible. Los archivos css y js especificos de dichas paginas. Las animaciones en los body de dichas paginas. Los iconos de estrella de la pagina galeria.
+
+* El Carrousel de la pagina de jaleria (junto con el javascrip necesario).
+
+* La implementacion de la "API" (a traves de un archivo local json) de la pagina de Galeria (junto con el javascript y archivos .json necesario).
+
+* Me encargue de unir todas las piezas del proyecto para la primera pagina de Servicios para tener una referencia para el resto de Paginas.
+
+* Ayuda en varios aspectos menores de logica y organizacion.
+
 
 
 
