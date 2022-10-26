@@ -18,6 +18,8 @@
 
 * Ayuda en varios aspectos menores de logica y organizacion.
 
+Agradezco la gran flexibilidad de mis compañeros y su dedicacion al proyecto a pesar de los contratiempos generales y personales de cada uno.
+
 
 
 
