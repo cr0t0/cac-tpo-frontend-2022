@@ -2,7 +2,7 @@
 #### Este es el repositorio para el trabajo de la parte de front-end del curso codo a codo 4.0 python 2022.
 ###### Comision 22531, Profesor: Anderson Ocaña.
 ###### Integrantes: [Augusto Daniel Pedrazzini](https://github.com/AuPedra), [Laura Fernanda Cabrera](https://github.com/laura-cabrera) y [Luis Manuel Campos](https://github.com/cr0t0).
-###### Link de la página en netlify [Hotel Diamond Resort](...).
+###### Link de la página en netlify [Hotel Diamond Resort](https://diamondresort.netlify.app/).
 
 ## A continuación cada integrante dejará una descripción de su colaboración en el proyecto:
 
