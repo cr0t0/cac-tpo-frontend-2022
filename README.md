@@ -16,11 +16,11 @@
 
 * Me encargue del nav bar con los links y el logo del hotel, y la animacion y archivo de javascript necesario para el menu hamburguesa en movil. La parte del banner con la imagen de fondo, y el titulo que le sigue debajo, que es lo que se repetiria en todas las demas paginas.
 
-* Hice todo el contenido de la pagina de contacto. La validacion en javascript del formulario, y la seccion del mapa. (Augusto me ayudo con un problema de logica que tuve al final del codigo).
+* Hice el contenido de la pagina de contacto. La validacion en javascript del formulario, y la seccion del mapa. (Augusto me ayudo con un problema de logica que tuve al final del codigo).
 
 * Agregue los textos de opiniones que Luis habia creado en el .json y complete algunos otros que faltaban para llenar las opiniones.
 
-* Tambien me encargue de temas de padding y margin en varias paginas y secciones.
+* Me encargue de temas de padding y margin en varias paginas y secciones.
 
 Para finalizar, en cuanto a mis compañeros quiero decir que han sido muy colaborativos, nos comunicamos bien y fue agradable trabajar con ellos
 
