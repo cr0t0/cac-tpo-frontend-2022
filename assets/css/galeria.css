@@ -88,7 +88,7 @@
 .opinioninfo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     border-radius: 1em;
     border: 1px solid #FFCC4D;
