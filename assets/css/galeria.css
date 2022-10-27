@@ -176,7 +176,7 @@
 
     .opiniones {
         max-height: 70vh;
-        overflow: auto;
+        overflow: scroll;
     }
     .opinioninfo {
         width: 24%;
