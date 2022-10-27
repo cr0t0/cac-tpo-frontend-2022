@@ -166,7 +166,7 @@
 /* DESKTOP */
 @media only screen and (min-width:1024px) { /* big landscape tablets, laptops, and desktops */
     .ndivgeneral {
-        width: 70vw;
+        width: 75vw;
     }
 
     .ncdiv {
